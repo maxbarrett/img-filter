@@ -12,6 +12,4 @@ python -m SimpleHTTPServer
 npm run watch-js
 ```
 
-Built with [Browserify](browserify.org).
-
-H/T [David Catuhe](https://twitter.com/deltakosh).
+Built with [Browserify](browserify.org) & h/t [David Catuhe](https://twitter.com/deltakosh).
