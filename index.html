@@ -7,17 +7,24 @@
 </head>
 <body>
 
-    <div id="sourceDiv">
-        <img id="source" />
-    </div>
+    <div id="images">
+        <img id="source" src="img/lik.jpg" />
     
-    <div id="targetDiv">
-        <a id="download" download="sepia.png">
+        <a id="download">
             <canvas id="target"></canvas>
         </a>
     </div>
 
-    <div id="log">Processing...</div>
+    <form>
+        <legend>Choose filter to apply:</legend>
+        <input type="radio" name="filter" value="sepia" id="sepia" checked><label for="sepia">Sepia</label>
+        <br>
+        <input type="radio" name="filter" value="blackwhite" id="blackwhite"><label for="blackwhite">Black &amp; white</label>
+        <br>
+        <button id="applyfilter">Apply filter</button>
+    </form>
+
+    <div id="log"></div>
 
     <script src="dist/build.js"></script>
 
