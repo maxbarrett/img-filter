@@ -2,7 +2,7 @@
 	'use strict';
 	
 	var $ = function(el){ return document.querySelectorAll(el); }
-	var apply = require('./apply-filter.js');
+	var image = require('./apply-filter.js');
 	var button = $('#applyfilter')[0];
 
 	button.addEventListener('click', function(e){
@@ -13,7 +13,7 @@
 			return item.checked;
 		});
 
-		apply.filter(checked[0].value);
+		image.filter(checked[0].value);
 	});
 
 })();
