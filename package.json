@@ -8,8 +8,8 @@
     "watchify": "latest"
   },
   "scripts": {
-    "build-js": "browserify js/main.js > js/build.js -d",
-    "watch-js": "watchify js/main.js -o js/build.js -dv"
+    "build-js": "browserify js/main.js > dist/build.js -d",
+    "watch-js": "watchify js/main.js -o dist/build.js -dv"
   },
   "author": "Max Barrett",
   "license": "ISC",
