@@ -1,9 +1,8 @@
 # Image filter
 
-Apply a sepia or black/white filter to an image using JavaScript canvas.
+Apply a sepia or black/white filter to an image using JavaScript canvas [[demo](http://maxbarrett.github.io/img-filter/)].
 
 TODO: Allow image upload.
-
 
 1) Install dependencies:
 ```sh
