@@ -2,6 +2,9 @@
 
 Apply a sepia or black/white filter to an image using JavaScript canvas.
 
+TODO: Allow image upload.
+
+
 1) Install dependencies:
 ```sh
 npm install
