@@ -1,28 +1,31 @@
 {
-  "name": "img-filter",
-  "version": "1.0.0",
-  "description": "Apply filters to images using javascript",
-  "main": "index.html",
-  "devDependencies": {
-    "browserify": "latest",
-    "watchify": "latest"
-  },
-  "scripts": {
-    "build-js": "browserify js/main.js > dist/build.js -d",
-    "watch-js": "watchify js/main.js -o dist/build.js -dv"
-  },
-  "author": "Max Barrett",
-  "license": "ISC",
-  "dependencies": {
-    "browserify": "^9.0.3",
-    "watchify": "^2.4.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/maxbarrett/img-filter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/maxbarrett/img-filter/issues"
-  },
-  "homepage": "https://github.com/maxbarrett/img-filter"
+    "name": "img-filter",
+    "version": "1.0.0",
+    "description": "Apply filters to images using javascript",
+    "main": "index.html",
+    "devDependencies": {
+        "browserify": "latest",
+        "watchify": "latest"
+    },
+    "scripts": {
+        "build-js-sourcemaps": "browserify js/main.js > dist/build.js -d",
+        "build-js-min": "browserify js/main.js | uglifyjs > dist/build.js",
+        "build-js-min-sourcemaps": "browserify js/main.js -d -p [minifyify --map build.map.json --output dist/build.map.json] > dist/build.js",
+        "watch-js": "watchify js/main.js -o dist/build.js -dv"
+    },
+    "author": "Max Barrett",
+    "license": "ISC",
+    "dependencies": {
+        "browserify": "^9.0.3",
+        "minifyify": "^6.3.2",
+        "watchify": "^2.4.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/maxbarrett/img-filter.git"
+    },
+    "bugs": {
+        "url": "https://github.com/maxbarrett/img-filter/issues"
+    },
+    "homepage": "https://github.com/maxbarrett/img-filter"
 }
